@@ -19,6 +19,9 @@ export class HeroesComponent implements OnInit {
       .subscribe(heroes => this.heroes = heroes);
   }
 
+  delete(id): void {
+  }
+
   ngOnInit() {
     this.getHeroes();
   }
