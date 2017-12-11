@@ -18,12 +18,12 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessageComponent,
-    DashboardComponent,
-    HeroSearchComponent
-  ],
+  HeroesComponent,
+  HeroDetailComponent,
+  MessageComponent,
+  DashboardComponent,
+  HeroSearchComponent
+],
   imports: [
     BrowserModule,
     FormsModule,
