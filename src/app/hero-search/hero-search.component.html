@@ -1,8 +1,10 @@
 <div id="search-component">
   <h4>Hero Search</h4>
 
-  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
-
+  <!--<input #searchBox id="search-box" (keyup)="search(searchBox.value)" />-->
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter name" #searchBox id="search-box" (keyup)="search(searchBox.value)" >
+  </mat-form-field>
   <ul class="search-result">
     <li *ngFor="let hero of heroes$ | async" >
       <a routerLink="/detail/{{hero.id}}">
