@@ -1,24 +1,10 @@
 <div *ngIf="hero" class="row hero-detail">
   <div class="col-4">
-    <mat-form-field >
-      <input matInput value="{{hero.id}}">
-    </mat-form-field>
+      <input  value="{{hero.id}}">
   </div>
   <div class="col-4">
-    <mat-form-field >
-      <input matInput [(ngModel)]="hero.name">
-    </mat-form-field>
+      <input  [(ngModel)]="hero.name">
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
-</div>
-
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Input">
-  </mat-form-field>
-
-  <mat-form-field>
-    <textarea matInput placeholder="Textarea"></textarea>
-  </mat-form-field>
 </div>
