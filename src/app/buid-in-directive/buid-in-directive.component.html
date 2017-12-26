@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngIf="display">Using c1 ng-if</div>
+    <button (click)="changeDisplay()">Click me</button>
+
+    <div class="col-md-4" *ngIf="display1">Using c2 ng-if</div>
+    <button (click)="display1 = !display1">Click me 2</button>
+  </div>
+
+  <button (click)="tabIndex = 1">Tap 1</button>
+  <button (click)="tabIndex = 2">Tap 2</button>
+  <button (click)="tabIndex = 3">Tap 3</button>
+  <h4>Su dung ng switch cach 1</h4>
+  <div class="row">
+    <div class="col-md-6" [ngSwitch]="tabIndex">
+      <div *ngSwitchCase="1">
+        <p>Button 1 clicked</p>
+      </div>
+      <div *ngSwitchCase="2">
+        <p>Button 2 clicked</p>
+      </div>
+      <div *ngSwitchCase="3">
+        <p>Button 3 clicked</p>
+      </div>
+    </div>
+  </div>
+  <h4>Su dung ng switch cach 2</h4>
+  <div class="row" [ngSwitch]="tabIndex">
+      <ng-template [ngSwitchCase] = '1'>Tap 1 Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Eaque fugiat ipsum maiores similique vel?
+        Accusamus dignissimos est numquam officiis,
+        praesentium reiciendis sit voluptas. Accusamus corporis
+        dolorem, facilis laboriosam molestias quae?</ng-template>
+    <ng-template [ngSwitchCase] = '2'>Tap 2 Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Aspernatur deleniti dolorum
+      inventore ipsum iusto quaerat quasi tempore
+      unde! Alias ducimus obcaecati omnis perferendis
+      perspiciatis quam qui quis, repellendus sed voluptas!</ng-template>
+    <ng-template [ngSwitchCase] = '3'>Tap 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda atque consequatur deleniti earum excepturi,
+      fugit iste itaque iure laboriosam libero minus, molestiae nisi non optio quis quo quod sapiente!</ng-template>
+  </div>
+</div>
