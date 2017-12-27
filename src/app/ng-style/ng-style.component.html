@@ -1,0 +1,34 @@
+<p>
+  style binding!
+</p>
+
+<button [style.color]="isRed ? 'red' : 'green'">Click me</button>
+<button [style.font-size.em]="isSpecial ? 3 : 1" >Yes, another button</button>
+<button [style.font-size.%]="!isSpecial ? 150 : 50" >Huh, button again</button>
+<p>ng style</p>
+<div [ngStyle]="{'font-style': !canSave ? 'italic' : 'normal',
+                 'font-weight': isUnchanged ? 'bold' : 'normal',
+                'font-size.px': !isSpecial ? 24 : 8}">
+  This is ng style c1.
+</div>
+<div [ngStyle] ="objStyle">This is ng style c2</div>
+
+<h3>Class binding</h3>
+<button class="btn" [class.active]="isActive">Some button</button>
+
+<button class="btn" [class.active]="tabIndex == 1">tabIndex == 1</button>
+<button class="btn" [ngClass]="'active btn-primary'">
+  String binding
+</button>
+
+<button class="btn" ngClass="active btn-primary">
+  String binding
+</button>
+
+<button class="btn" [ngClass]="['active', 'btn-primary']">
+  Array binding
+</button>
+
+<button class="btn" [ngClass]="{active: tabIndex == 1}">
+  Object binding
+</button>

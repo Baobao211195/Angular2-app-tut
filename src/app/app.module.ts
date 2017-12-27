@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { BuidInDirectiveComponent } from './buid-in-directive/buid-in-directive.component';
 import { StyleForComponentComponent } from './style-for-component/style-for-component.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { StyleForComponentComponent } from './style-for-component/style-for-comp
     AppComponent,
     BuidInDirectiveComponent,
     StyleForComponentComponent,
+    NgStyleComponent,
 ],
   imports: [
     BrowserModule,

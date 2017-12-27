@@ -4,7 +4,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   selector: 'app-style-for-component',
   templateUrl: './style-for-component.component.html',
   styleUrls: ['./style-for-component.component.css'],
-  encapsulation : ViewEncapsulation.Native  /*không bao đóng component nữa => đưa style ra global*/
+  encapsulation : ViewEncapsulation.None  /*không bao đóng component nữa => đưa style ra global*/
   // encapsulation : ViewEncapsulation.Native (không nhận style của cha cũng không nhận style của global)
   // encapsulation : ViewEncapsulation.Emulate  /* (nếu không khai báo đây là mặc định)Nhận style của global ko nhận style của component cha*/
 })
