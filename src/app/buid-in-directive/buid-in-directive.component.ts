@@ -1,21 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-buid-in-directive',
-  templateUrl: './buid-in-directive.component.html',
-  styleUrls: ['./buid-in-directive.component.css']
+	  selector: 'app-buid-in-directive',
+	  templateUrl: './buid-in-directive.component.html',
+	styleUrls: ['./buid-in-directive.component.css']
 })
 export class BuidInDirectiveComponent implements OnInit {
-
   display: boolean;
   display1: boolean;
   tabIndex: number;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
-  changeDisplay () {
+
+  changeDisplay() {
     this.display = !this.display;
   }
 
