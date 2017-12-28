@@ -1,0 +1,20 @@
+:host { /*chi ap dung cho encapsulation cho Native va Emulate*/
+  display: block;
+  background-color: red;
+}
+
+.st_img {
+  border-radius: 50%;
+  width: 202px;
+}
+.st_title {
+  font-size: 30px;
+  font-weight: 300;
+  color: blue;
+}
+/*style cho the p trong component con
+đây là thiết lập mặc định ccho component
+*/
+p {
+  font-size: 40px;
+}

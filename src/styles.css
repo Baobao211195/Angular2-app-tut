@@ -2,3 +2,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/*đây là file ảnh hưởng toàn app, global*/
+.st_title {
+  font-weight: bold;
+  border: dotted;
+  color: aqua;
+}
+p {
+  font-size: 20px;
+}

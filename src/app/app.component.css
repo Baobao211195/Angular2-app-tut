@@ -27,3 +27,10 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
+
+/*style cho component cha*/
+p {
+  font-size: 80px;
+}
+
+
