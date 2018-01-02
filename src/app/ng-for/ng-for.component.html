@@ -1,0 +1,51 @@
+<div class="row">
+  <p>
+    ng-for theo cách cách 1!
+  </p>
+  <br>
+
+  <table class="table" style="text-align: center; width: 600px;">
+    <thead>
+    <tr>
+      <th>Stt</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--cách 1-->
+    <tr *ngFor="let user of listUser; let i = index;">
+        <td>{{i}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.address}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="row">
+  <p>cách 2 sử dụng ng template</p>
+  <table class="table" style="text-align: center; width: 600px;">
+    <thead>
+    <tr>
+      <th>Stt</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--cách 2 sử dụng ng-template-->
+    <ng-template ngFor let-user [ngForOf]="listUser" let-i="index" >
+      <tr >
+        <td>{{i}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.address}}</td>
+      </tr>
+    </ng-template>
+    </tbody>
+  </table>
+</div>
+
